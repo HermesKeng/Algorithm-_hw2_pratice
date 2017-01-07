@@ -77,7 +77,8 @@ int main(int argc, const char * argv[]) {
             }
         }
         check[select_point]=true;
-        //compare the each vertex connected to select point with the shortest distance table , if it is we will update the table
+        //compare the each vertex connected to select point with the shortest distance table , if it is we will update the table.
+        //it has a term call "Relaxation"
         for(int i=1;i<=vertex;i++){
             if(map[select_point][i]){
                 cmp_weight=d[select_point]+w[select_point][i];
